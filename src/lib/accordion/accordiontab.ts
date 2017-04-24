@@ -70,11 +70,11 @@ export class Md2AccordionTab {
   get active(): boolean { return this._active; }
   set active(value) {
     this._active = coerceBooleanProperty(value);
-    if (this._active) {
-      for (let i = 0; i < this._accordion.tabs.length; i++) {
-        if (this._accordion.tabs[i] !== this) { this._accordion.tabs[i].active = false; }
-      }
-    }
+    // if (this._active) {
+    //   for (let i = 0; i < this._accordion.tabs.length; i++) {
+    //     if (this._accordion.tabs[i] !== this) { this._accordion.tabs[i].active = false; }
+    //   }
+    // }
   }
 
   get slide(): string {
